@@ -12,6 +12,7 @@
         <module name="eureka_server" />
         <module name="feign-service" />
         <module name="ribbon-service" />
+        <module name="hystrix-dashboard" />
         <module name="common_service" />
         <module name="user_service" />
         <module name="common-service" />
@@ -24,6 +25,7 @@
       <module name="eureka_security_server" target="1.8" />
       <module name="eureka_server" target="1.8" />
       <module name="feign-service" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
       <module name="hystrix-service" target="1.8" />
       <module name="ribbon-service" target="1.8" />
       <module name="user_service" target="1.8" />
@@ -35,6 +37,7 @@
       <module name="eureka_security_server" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
       <module name="feign-service" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
       <module name="hystrix-service" options="-parameters" />
       <module name="ribbon-service" options="-parameters" />
       <module name="user_service" options="-parameters" />
