@@ -28,6 +28,7 @@ public class Result<T> {
         Result result = new Result();
         result.setCode(0);
         result.setSuccess(true);
+        result.setMessage("操作成功");
         result.setData(data);
         return result;
     }
