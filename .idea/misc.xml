@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/eureka_server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka_security_server/pom.xml" />
+        <option value="$PROJECT_DIR$/user_service/pom.xml" />
+        <option value="$PROJECT_DIR$/common-service/pom.xml" />
+        <option value="$PROJECT_DIR$/common_service/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-service/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
