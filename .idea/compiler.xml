@@ -11,6 +11,7 @@
         <module name="eureka_security_server" />
         <module name="eureka_server" />
         <module name="feign-service" />
+        <module name="zuul-proxy" />
         <module name="ribbon-service" />
         <module name="hystrix-dashboard" />
         <module name="turbine-service" />
@@ -31,6 +32,7 @@
       <module name="ribbon-service" target="1.8" />
       <module name="turbine-service" target="1.8" />
       <module name="user_service" target="1.8" />
+      <module name="zuul-proxy" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -44,6 +46,7 @@
       <module name="ribbon-service" options="-parameters" />
       <module name="turbine-service" options="-parameters" />
       <module name="user_service" options="-parameters" />
+      <module name="zuul-proxy" options="-parameters" />
     </option>
   </component>
 </project>

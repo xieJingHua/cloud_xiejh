@@ -14,7 +14,7 @@ service-url:
 
 feign:
   hystrix:
-    enabled: true   #ÔÚFeignÖĞ¿ªÆôHystrix
+    enabled: true   #åœ¨Feignä¸­å¼€å¯Hystrix
 
 logging:
   level:
