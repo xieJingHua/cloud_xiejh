@@ -14,4 +14,8 @@ service-url:
 
 feign:
   hystrix:
-    enabled : true   #在Feign中开启Hystrix
+    enabled: true   #在Feign中开启Hystrix
+
+logging:
+  level:
+    com.xiejh.feignservice.service.UserService: debug
