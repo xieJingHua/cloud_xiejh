@@ -19,3 +19,15 @@ feign:
 logging:
   level:
     com.xiejh.feignservice.service.UserService: debug
+  file:
+    name: user-service.log
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+

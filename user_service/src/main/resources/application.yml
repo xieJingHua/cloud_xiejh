@@ -3,6 +3,19 @@ server:
 spring:
   application:
     name: user-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  file:
+    name: user-service.log
+
 eureka:
   client:
     register-with-eureka: true

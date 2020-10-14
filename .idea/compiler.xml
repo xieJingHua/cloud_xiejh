@@ -21,9 +21,11 @@
         <module name="common_service" />
         <module name="eureka_security_server" />
         <module name="hystrix-dashboard" />
+        <module name="admin-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin-client" target="1.8" />
       <module name="admin-server" target="1.8" />
       <module name="common-service" target="1.7" />
       <module name="common_service" target="1.5" />
@@ -43,6 +45,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-client" options="-parameters" />
       <module name="admin-server" options="-parameters" />
       <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
