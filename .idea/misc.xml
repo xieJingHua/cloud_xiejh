@@ -18,6 +18,8 @@
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/admin-server/pom.xml" />
         <option value="$PROJECT_DIR$/sentinel-service/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-ribbon-service/pom.xml" />
       </list>
     </option>
   </component>
