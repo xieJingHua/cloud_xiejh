@@ -2,6 +2,7 @@ package com.xiejh.nacos_user_service.controller;
 
 import com.xiejh.common_service.response.Result;
 import entity.User;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,9 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
+    @Value("${config.info}")
+    private String configInfo;
+
     @GetMapping("/get/{id}")
     public Result<String> getUser(@PathVariable Long id) {
         System.out.println("id:" + id);
@@ -31,6 +35,12 @@ public class UserController {
         userList.add(new User(1, "001", "张三"));
         userList.add(new User(2, "002", "李四"));
         return Result.success(userList);
+    }
+
+
+    @GetMapping("/configInfo")
+    public String getConfigInfo() {
+        return configInfo;
     }
 
 }

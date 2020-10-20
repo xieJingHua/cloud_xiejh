@@ -20,7 +20,7 @@ public class UserRibbonController {
 
     @Resource(name = "restTemplate")
     private RestTemplate restTemplate;
-    @Value("${service-url.user-service}")
+    @Value("${service-url.nacos-user-service}")
     private String userServiceUrl;
 
     @GetMapping("/{id}")
