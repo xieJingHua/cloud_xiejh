@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * 响应结果集
+ *
  * @author xiejh
  * @Date 2020/10/10 12:32
  **/
@@ -17,6 +18,13 @@ public class Result<T> {
     private String message;
 
     private T data;
+
+    public Result(){}
+
+    public Result(String message, int code) {
+        this.code = code;
+        this.message = message;
+    }
 
     /**
      * 成功
