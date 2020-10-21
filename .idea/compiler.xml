@@ -12,6 +12,7 @@
         <module name="sentinel-service" />
         <module name="hystrix-service" />
         <module name="zuul-proxy" />
+        <module name="api-gateway" />
         <module name="admin-server" />
         <module name="turbine-service" />
         <module name="eureka_server" />
@@ -30,6 +31,7 @@
     <bytecodeTargetLevel>
       <module name="admin-client" target="1.8" />
       <module name="admin-server" target="1.8" />
+      <module name="api-gateway" target="1.8" />
       <module name="common-service" target="1.7" />
       <module name="common_service" target="1.5" />
       <module name="config-client" target="1.8" />
@@ -54,6 +56,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-client" options="-parameters" />
       <module name="admin-server" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="demo" options="-parameters" />

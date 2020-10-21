@@ -1,122 +1,57 @@
-2020-10-14 15:55:27.406  INFO 4852 --- [main] c.x.user_service.UserServiceApplication  : No active profile set, falling back to default profiles: default
-2020-10-14 15:55:27.981  WARN 4852 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-10-14 15:55:28.069  INFO 4852 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=89c35efb-072b-3e5c-bece-fba35d0eed0d
-2020-10-14 15:55:28.309  INFO 4852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
-2020-10-14 15:55:28.316  INFO 4852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-14 15:55:28.316  INFO 4852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-14 15:55:28.458  INFO 4852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-10-14 15:55:28.458  INFO 4852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1031 ms
-2020-10-14 15:55:28.541  WARN 4852 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-10-14 15:55:28.541  INFO 4852 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-10-14 15:55:28.553  INFO 4852 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3c83468e
-2020-10-14 15:55:28.644  WARN 4852 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-10-14 15:55:28.645  INFO 4852 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-10-14 15:55:28.754  INFO 4852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-14 15:55:29.688  INFO 4852 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
-2020-10-14 15:55:29.708  WARN 4852 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-10-14 15:55:29.735  INFO 4852 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
-2020-10-14 15:55:29.789  INFO 4852 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-10-14 15:55:29.813  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-10-14 15:55:29.925  INFO 4852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-10-14 15:55:29.925  INFO 4852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-10-14 15:55:30.029  INFO 4852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-10-14 15:55:30.029  INFO 4852 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-10-14 15:55:30.165  INFO 4852 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 15:55:30.349  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-10-14 15:55:30.349  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-10-14 15:55:30.349  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-10-14 15:55:30.350  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-10-14 15:55:30.350  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-10-14 15:55:30.350  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-10-14 15:55:30.350  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-10-14 15:55:30.481  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-10-14 15:55:30.483  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-10-14 15:55:30.485  INFO 4852 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-10-14 15:55:30.488  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1602662130487 with initial instances count: 1
-2020-10-14 15:55:30.489  INFO 4852 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-SERVICE with eureka with status UP
-2020-10-14 15:55:30.489  INFO 4852 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1602662130489, current=UP, previous=STARTING]
-2020-10-14 15:55:30.491  INFO 4852 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/windows10.microdone.cn:user-service:8201: registering service...
-2020-10-14 15:55:30.517  INFO 4852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
-2020-10-14 15:55:30.518  INFO 4852 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8201
-2020-10-14 15:55:30.524  INFO 4852 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/windows10.microdone.cn:user-service:8201 - registration status: 204
-2020-10-14 15:55:30.793  INFO 4852 --- [main] c.x.user_service.UserServiceApplication  : Started UserServiceApplication in 5.091 seconds (JVM running for 6.111)
-2020-10-14 15:55:30.980  INFO 4852 --- [RMI TCP Connection(1)-10.1.159.95] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-14 15:55:30.981  INFO 4852 --- [RMI TCP Connection(1)-10.1.159.95] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-14 15:55:30.987  INFO 4852 --- [RMI TCP Connection(1)-10.1.159.95] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-10-14 16:00:30.352  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:05:30.356  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:10:30.358  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:15:30.360  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:20:30.362  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:25:30.363  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:30:30.365  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:31:44.153  INFO 13416 --- [main] c.x.f.FeignServiceApplication            : No active profile set, falling back to default profiles: default
-2020-10-14 16:31:44.683  WARN 13416 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-10-14 16:31:44.789  INFO 13416 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=357d9e3f-743e-3fc0-a439-1bdfc47f654e
-2020-10-14 16:31:44.803  INFO 13416 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.xiejh.feignservice.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-10-14 16:31:45.025  INFO 13416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8701 (http)
-2020-10-14 16:31:45.032  INFO 13416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-14 16:31:45.032  INFO 13416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-14 16:31:45.153  INFO 13416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-10-14 16:31:45.153  INFO 13416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 986 ms
-2020-10-14 16:31:45.205  WARN 13416 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-10-14 16:31:45.205  INFO 13416 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-10-14 16:31:45.213  INFO 13416 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@617389a
-2020-10-14 16:31:45.485  WARN 13416 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-10-14 16:31:45.485  INFO 13416 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-10-14 16:31:45.633  INFO 13416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-14 16:31:46.426  INFO 13416 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
-2020-10-14 16:31:46.443  WARN 13416 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-10-14 16:31:46.471  INFO 13416 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
-2020-10-14 16:31:46.524  INFO 13416 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-10-14 16:31:46.548  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-10-14 16:31:46.654  INFO 13416 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-10-14 16:31:46.654  INFO 13416 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-10-14 16:31:46.753  INFO 13416 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-10-14 16:31:46.753  INFO 13416 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-10-14 16:31:46.896  INFO 13416 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:31:47.082  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-10-14 16:31:47.082  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-10-14 16:31:47.082  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-10-14 16:31:47.082  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-10-14 16:31:47.082  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-10-14 16:31:47.082  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-10-14 16:31:47.082  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-10-14 16:31:47.216  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-10-14 16:31:47.218  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2020-10-14 16:31:47.220  INFO 13416 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-10-14 16:31:47.224  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1602664307223 with initial instances count: 2
-2020-10-14 16:31:47.225  INFO 13416 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application FEIGN-SERVICE with eureka with status UP
-2020-10-14 16:31:47.226  INFO 13416 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1602664307226, current=UP, previous=STARTING]
-2020-10-14 16:31:47.228  INFO 13416 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FEIGN-SERVICE/windows10.microdone.cn:feign-service:8701: registering service...
-2020-10-14 16:31:47.256  INFO 13416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8701 (http) with context path ''
-2020-10-14 16:31:47.256  INFO 13416 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8701
-2020-10-14 16:31:47.261  INFO 13416 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FEIGN-SERVICE/windows10.microdone.cn:feign-service:8701 - registration status: 204
-2020-10-14 16:31:47.531  INFO 13416 --- [main] c.x.f.FeignServiceApplication            : Started FeignServiceApplication in 4.854 seconds (JVM running for 5.798)
-2020-10-14 16:31:48.106  INFO 13416 --- [RMI TCP Connection(3)-10.1.159.95] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-14 16:31:48.106  INFO 13416 --- [RMI TCP Connection(3)-10.1.159.95] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-14 16:31:48.111  INFO 13416 --- [RMI TCP Connection(3)-10.1.159.95] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-10-14 16:35:30.367  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:36:47.087  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:40:30.370  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:41:47.090  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:45:30.372  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:46:47.091  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:50:30.375  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:51:47.093  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:55:30.377  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 16:56:47.093  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:00:30.378  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:01:47.096  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:05:30.380  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:06:47.098  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:10:30.382  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:11:47.100  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:15:30.385  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:16:47.102  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:20:30.388  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:21:47.105  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:25:30.389  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:26:47.107  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:30:30.391  INFO 4852 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-10-14 17:31:47.109  INFO 13416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-21 13:32:14.913  INFO 9276 --- [main] c.x.user_service.UserServiceApplication  : No active profile set, falling back to default profiles: default
+2020-10-21 13:32:15.829  WARN 9276 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-10-21 13:32:15.933  INFO 9276 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=89c35efb-072b-3e5c-bece-fba35d0eed0d
+2020-10-21 13:32:16.238  INFO 9276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2020-10-21 13:32:16.248  INFO 9276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-21 13:32:16.248  INFO 9276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-21 13:32:16.385  INFO 9276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-21 13:32:16.385  INFO 9276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1446 ms
+2020-10-21 13:32:16.445  WARN 9276 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-21 13:32:16.445  INFO 9276 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-21 13:32:16.454  INFO 9276 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3d7fb838
+2020-10-21 13:32:16.563  WARN 9276 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-10-21 13:32:16.563  INFO 9276 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-21 13:32:16.717  INFO 9276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-21 13:32:17.890  INFO 9276 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-10-21 13:32:17.923  WARN 9276 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-10-21 13:32:17.977  INFO 9276 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-10-21 13:32:18.052  INFO 9276 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-10-21 13:32:18.082  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-10-21 13:32:18.236  INFO 9276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-10-21 13:32:18.236  INFO 9276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-10-21 13:32:18.331  INFO 9276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-10-21 13:32:18.331  INFO 9276 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-10-21 13:32:18.485  INFO 9276 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-21 13:32:18.683  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-21 13:32:18.683  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-21 13:32:18.683  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-21 13:32:18.683  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-21 13:32:18.683  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-21 13:32:18.683  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-10-21 13:32:18.683  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-21 13:32:18.900  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-21 13:32:18.902  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-10-21 13:32:18.903  INFO 9276 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-10-21 13:32:18.907  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1603258338907 with initial instances count: 0
+2020-10-21 13:32:18.908  INFO 9276 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-SERVICE with eureka with status UP
+2020-10-21 13:32:18.910  INFO 9276 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1603258338910, current=UP, previous=STARTING]
+2020-10-21 13:32:18.911  INFO 9276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/windows10.microdone.cn:user-service:8201: registering service...
+2020-10-21 13:32:18.945  INFO 9276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2020-10-21 13:32:18.947  INFO 9276 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8201
+2020-10-21 13:32:19.003  INFO 9276 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/windows10.microdone.cn:user-service:8201 - registration status: 204
+2020-10-21 13:32:19.276  INFO 9276 --- [main] c.x.user_service.UserServiceApplication  : Started UserServiceApplication in 6.655 seconds (JVM running for 7.945)
+2020-10-21 13:32:19.615  INFO 9276 --- [RMI TCP Connection(1)-10.1.159.95] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-21 13:32:19.616  INFO 9276 --- [RMI TCP Connection(1)-10.1.159.95] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-21 13:32:19.622  INFO 9276 --- [RMI TCP Connection(1)-10.1.159.95] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-10-21 13:32:48.903  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-10-21 13:32:48.904  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-10-21 13:32:48.904  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-10-21 13:32:48.904  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-10-21 13:32:48.904  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-10-21 13:32:48.904  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-10-21 13:32:48.904  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-10-21 13:32:48.932  INFO 9276 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-10-21 13:37:18.686  INFO 9276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-21 13:42:18.689  INFO 9276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-21 13:47:18.692  INFO 9276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-10-21 13:52:18.696  INFO 9276 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
