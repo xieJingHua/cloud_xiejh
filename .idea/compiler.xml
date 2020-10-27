@@ -12,7 +12,7 @@
         <module name="sentinel-service" />
         <module name="hystrix-service" />
         <module name="zuul-proxy" />
-        <module name="api-gateway" />
+        <module name="hystrix-dashboard" />
         <module name="admin-server" />
         <module name="turbine-service" />
         <module name="eureka_server" />
@@ -23,7 +23,8 @@
         <module name="common-service" />
         <module name="common_service" />
         <module name="eureka_security_server" />
-        <module name="hystrix-dashboard" />
+        <module name="api-gateway" />
+        <module name="seate-order-service" />
         <module name="nacos-user-service" />
         <module name="admin-client" />
       </profile>
@@ -46,6 +47,7 @@
       <module name="nacos-ribbon-service" target="1.8" />
       <module name="nacos-user-service" target="1.8" />
       <module name="ribbon-service" target="1.8" />
+      <module name="seate-order-service" target="1.8" />
       <module name="sentinel-service" target="1.8" />
       <module name="turbine-service" target="1.8" />
       <module name="user_service" target="1.8" />
@@ -69,6 +71,7 @@
       <module name="nacos-ribbon-service" options="-parameters" />
       <module name="nacos-user-service" options="-parameters" />
       <module name="ribbon-service" options="-parameters" />
+      <module name="seate-order-service" options="-parameters" />
       <module name="sentinel-service" options="-parameters" />
       <module name="turbine-service" options="-parameters" />
       <module name="user_service" options="-parameters" />
